@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+$roboto-slab: 'Roboto Slab', serif;  
+body {
+  font-family: $roboto-slab
+}
+.container {
+  h1{
+    text-align: center;
+  }
+  .card-wrapper
+  {
+    background-color: #1F085B ;
+    -webkit-box-shadow: -4px 0px 12px -6px rgba(0,0,0,0.96); 
+box-shadow: -4px 0px 12px -6px rgba(0,0,0,0.96);
+    font-family: $roboto-slab;
+    width:400px;
+    height:100%;
+    border:1px solid grey;
+    margin: 10px auto;
+    border-radius:10px;
+    display: flex;
+    max-height: 100%;
+  
+    .image-wrapper
+     { padding: 0px 0px;
+      margin: 0px;
+      width:150px;
+      flex:1;
+    height:150px;    
+    overflow:hidden;
+    position:relative;
+         img{
+           height:auto;
+           
+           width:150px;
+           flex:1
+         }
+     } 
+     .description-wrapper
+      {
+        h2{
+          
+        }
+        button {
+          background-color: #0a7611;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: #ffffff;
+    width: 110px;
+    font-weight: 600;
+    padding: 5px 0px;
+        }
+        color:#ffffff;
+         margin-left:auto;
+         margin-right: 0px;
+         flex: 2;
+         padding: 0px 20px
+      }
+  }
+}

@@ -19,23 +19,19 @@ export default class Cardview extends React.Component {
     return (
       <div className="container">
         <h1>React Card</h1>
-        {/* loop state here */}
-        {this.state.persons.map(person => (
+
+        {this.state.persons.map(({ name, address: { street } }) => (
           <div className="card-wrapper">
             <div className="image-wrapper">
               <img src={image} />
             </div>
             <div className="description-wrapper">
-              <h2>{person.name}</h2>
-              <p>{person.address.street}</p>
+              <h2>{name}</h2>
+              <p>{street}</p>
               <button>More</button>
             </div>
-            {/* {this.state.persons.map(person => (
-          <li>{person.name}</li>
-        ))} */}
           </div>
         ))}
-        {/* loop state  enfs here */}
       </div>
     );
   }
